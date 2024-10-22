@@ -1,0 +1,85 @@
+For NVIDIA:
+
+1- Download And Install CUDA Toolkit:
+
+* On Windows & Linux:
+
+	https://developer.nvidia.com/cuda-downloads
+
+* On Mac:
+
+	https://www.nvidia.com/en-us/drivers/cuda/mac-driver-archive
+
+2- Check Out installed CUDA Toolkit in Your Computer:
+
+* On Windows:
+
+	1- Open The Command Prompt (You Can Search for cmd in The Start Menu).
+	2- Type The Following Command And Press Enter:
+
+		nvcc --version
+
+	Or:
+
+	1- Right-Click on Your Desktop And Select NVIDIA Control Panel.
+	2- In The Control Panel, Click on Help And Then System Information. The CUDA Version Will Be Listed There.
+
+On Linux:
+
+	1- Open the terminal.
+	2- Type the following command:
+
+		nvcc --version
+
+* On Mac:
+
+	1- Open the terminal.
+	2- Type the following command:
+
+		nvcc --version
+
+3- Download And Install NVIDIA Driver:
+
+	https://www.nvidia.com/en-us/drivers
+
+NOTE: Make Sure That You're Downloading NVIDIA Studio Driver Version.
+
+Check Out The Suitable Version From Down Below Link:
+
+	https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
+
+4- Install "numpy" For Python:
+
+	1- Open Anaconda Or any Terminal For Python You Have Installed And Type Following Command:
+
+	pip install numpy
+
+5- Install "numba" For Python:
+
+	1- Open Anaconda Or any Terminal For Python You Have Installed And Type Following Command:
+
+	pip install numba
+
+6- Install "cupy" For Python:
+
+	1- Open Anaconda Or any Terminal For Python You Have Installed And Type Following Command:
+
+	For v11.2 ~ 11.8		pip install cupy-cuda11x
+
+	For v12.x			pip install cupy-cuda12x
+
+* The Cupy's Document:
+
+	https://docs.cupy.dev/en/stable/install.html
+
+7- Restart Jupyter Notebook, Anaconda, VS Code Or Any Program That You're Using For Code.
+
+	I Recommand to Restart Your Computer...
+
+Enjoy The Running Speed :-)
+
+For AMD:
+
+1- Just Follow Instruction From The Link Down Below:
+
+https://rocm.docs.amd.com/projects/hip-python/en/docs-5.6.1/user_guide/2_cuda_python_interop.html
