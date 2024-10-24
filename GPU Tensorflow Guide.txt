@@ -1,0 +1,119 @@
+Normal Use:
+
+On Windows:
+
+Method 1: Using pip (Recommanded)
+
+1- Install Python.
+
+2- Upgrade pip:
+
+		pip install --upgrade pip
+
+3- Install TensorFlow:
+
+		pip install tensorflow
+
+3- Verify The Installation:
+
+		python -c "import tensorflow as tf; print(tf.__version__)"
+
+
+Method 2: Using Anaconda (Not Recommanded)
+
+1- Install Anaconda.
+
+2- Create a New Environment:
+
+		conda create --name myenv python=3.12
+
+3- Activate The Environment:
+
+		conda activate myenv
+
+4- Install TensorFlow within The Activated Environment:
+
+		conda install tensorflow
+
+5- Verify The Installation:
+
+		python -c "import tensorflow as tf; print(tf.__version__)"
+
+DNN Use:
+
+NOTE: If You Use Deep Neural Networks, You Must Install cuDNN:
+
+		https://developer.nvidia.com/cudnn-downloads
+
+1- Verify Hardware:
+
+    Verify GPU Presence:
+        Open your system's Device Manager (on Windows) or use the command line (on macOS/Linux) to check if your GPU is detected by the system.
+
+    Compatible GPU:
+        Make sure you have a compatible NVIDIA GPU. You can check the NVIDIA CUDA GPUs list to see if your GPU is supported.
+
+2- Older TensorFlow Version:
+
+	Ensure you are using a version of TensorFlow that supports your CUDA and cuDNN versions. Use TensorFlow 2.4.0+ for compatibility with CUDA 11.x.
+
+3- Install Required Drivers:
+
+    NVIDIA Driver:
+        Ensure that you have the latest NVIDIA driver installed for your GPU. You can download it from the NVIDIA Driver Downloads page.
+
+4- Install CUDA and cuDNN:
+
+    CUDA Toolkit:
+        Install the compatible version of the CUDA Toolkit for your version of TensorFlow. You can check the compatibility table here.
+
+    cuDNN:
+        Download and install the appropriate version of cuDNN that corresponds with your CUDA version. 
+	After downloading, make sure to copy the cuDNN files into the CUDA directory (usually into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vXX.X\).
+
+5- Set Environment Variables:
+
+	Make sure the following paths are added to your system's environment variables:
+
+    CUDA:
+        Add to your PATH environment variable:
+
+    		C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\bin
+    		C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\libnvvp
+
+    cuDNN:
+   	Add to your PATH:
+
+        	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\bin
+
+6- Verify TensorFlow Installation:
+
+	You can run a simple script to check if TensorFlow detects the GPU:
+	Go to GPU Tensorflow...
+
+7- Use conda for Setup:
+
+	If you're still having issues, consider using conda to set up your environment, as it can handle dependencies more seamlessly. 
+
+    *** 3 IMPORTANT STEPS:
+
+    1- Install Anaconda/Miniconda:
+    2- Download and install the Anaconda or Miniconda distribution.
+
+    Create a New Environment:
+
+		conda create --name tf_gpu python=3.8
+		conda activate tf_gpu
+
+    3- Install TensorFlow:
+
+    		conda install tensorflow-gpu
+
+8- Reboot Your System:
+
+	After making all the necessary changes, reboot your system to ensure all drivers and environment variables are loaded correctly.
+
+9- Run TensorFlow Again:
+
+	Now re-run your TensorFlow script and check again if it can see the GPU.
+
