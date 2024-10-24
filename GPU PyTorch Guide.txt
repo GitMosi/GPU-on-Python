@@ -1,0 +1,6 @@
+1- Go to https://pytorch.org/get-started/locally
+
+2- Select Your Preferences And Run The Install Command or Anaconda Command.
+
+3- Run The Suitable Command.
+
